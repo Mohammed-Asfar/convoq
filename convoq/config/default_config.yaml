@@ -1,0 +1,25 @@
+ai:
+  provider: groq
+  model: llama-3.1-8b-instant
+  api_key: ""  # Set via GROQ_API_KEY env var or here
+  max_tokens: 256
+  temperature: 0.7
+
+hotkeys:
+  open_picker: ctrl+r
+  undo: ctrl+z+shift
+
+context:
+  max_messages: 5
+  passthrough_min_chars: 3
+
+clipboard:
+  paste_delay_ms: 50
+  restore_delay_ms: 100
+
+overlay:
+  fade_timeout_ms: 1500
+  position: cursor  # "cursor" or "center"
+
+undo:
+  max_history: 10
